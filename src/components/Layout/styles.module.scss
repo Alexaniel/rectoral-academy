@@ -1,0 +1,18 @@
+@import '../../styles/utils.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  margin: 0;
+  padding: 24px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  @include breakpoint(md) { padding: 40px 24px; }
+  @include breakpoint(lg) { padding: 40px 32px; }
+  @include breakpoint(xl) { padding: 56px 120px; }
+}

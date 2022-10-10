@@ -1,4 +1,4 @@
-import { PrimaryButton } from '@fluentui/react';
+import { Text, ITextProps } from '@fluentui/react/lib/Text';
 import { useTranslation } from 'react-i18next';
 
 const Home = () => {
@@ -6,9 +6,9 @@ const Home = () => {
 
   return (
     <div>
-      {t('HOME')}
-      <br />
-      <PrimaryButton text="Primary" onClick={() => alert('fluentUI Configurated')} />
+      <Text variant="mediumPlus" nowrap block>
+        This page has layout config.
+      </Text>
     </div>
   );
 };

@@ -1,0 +1,7 @@
+@mixin generic($map, $attribute) {
+  @each $property, $value in $map {
+      &-#{$property} {
+          #{$attribute}: $value;
+      }
+  }
+}

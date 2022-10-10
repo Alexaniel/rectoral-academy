@@ -1,5 +1,7 @@
+import styles from './styles.module.scss';
+
 const Layout = ({ children }: { children: any }) => (
-  <div className="layout">
+  <div className={styles.layout}>
     {children}
   </div>
 );
