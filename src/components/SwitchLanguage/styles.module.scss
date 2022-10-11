@@ -1,0 +1,35 @@
+@import '../../styles/utils';
+@import '../../styles/variables';
+
+.containerSwitcher { 
+  position: relative;
+  margin-left: 0;
+
+  @include breakpoint(lg) { margin-left: 75px; }
+}
+
+.languageIcon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  z-index: 2;
+  width: 15px;
+  height: 15px;
+
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+  
+  transform: translateY(-50%);
+ 
+  @include breakpoint(lg) {
+    width: 18px;
+    height: 18px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

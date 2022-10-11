@@ -1,4 +1,17 @@
 {
   "LOADING": "Cargando...",
-  "HOME": "Inicio"
+  "LANGUAGES": {
+    "SPANISH": "ES",
+    "ENGLISH": "EN",
+    "PORTUGUESE": "PT"
+  },
+  "MAIN_MENU": "Menú principal",
+  "CHANGE_LANGUAGE": "Cambiar idioma",
+  "NAVBAR": {
+    "HOME": "Inicio",
+    "PURPOSE": "Propósito",
+    "SENSE_180": "Sentido 180",
+    "TRAINING_GAP": "Brecha formativa",
+    "TARGET": "Público Objetivo"
+  }
 }

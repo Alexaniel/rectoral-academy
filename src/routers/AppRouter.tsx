@@ -2,12 +2,12 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
 } from 'react-router-dom';
 
-import Login from '../screens/Login';
-import Signup from '../screens/Signup';
-import Onboarding from '../screens/Onboarding';
+import Purpose from '../screens/Purpose';
+import Sense from '../screens/Sense';
+import Training from '../screens/Training';
+import Target from '../screens/Target';
 
 import DashboardRouter from './DashboardRouter';
 
@@ -17,27 +17,35 @@ export const AppRouter = () => (
   <Router>
     <Routes>
       <Route
-        path="/login"
+        path="/purpose"
         element={(
-          <Login />
+          <Layout>
+            <Purpose />
+          </Layout>
         )}
       />
       <Route
-        path="/signup"
+        path="/sense-180"
         element={(
-          <Signup />
+          <Layout>
+            <Sense />
+          </Layout>
         )}
       />
       <Route
-        path="/onboarding"
+        path="/training-gap"
         element={(
-          <Navigate to="/onboarding/create-account" />
+          <Layout>
+            <Training />
+          </Layout>
         )}
       />
       <Route
-        path="/onboarding/*"
+        path="/target"
         element={(
-          <Onboarding />
+          <Layout>
+            <Target />
+          </Layout>
         )}
       />
       <Route
