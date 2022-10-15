@@ -1,8 +1,15 @@
-import { ITextProps, Text } from '@fluentui/react';
+import { IStackProps, ITextProps, Stack, Text } from '@fluentui/react';
 import { Image, IImageProps } from '@fluentui/react/lib/Image';
 import { theme } from '../../theme';
 import IMAGES from '../../constants/images';
 import styles from './styles.module.scss';
+
+const stackProps: Partial<IStackProps> = {
+  horizontal: true,
+  horizontalAlign: "space-between",
+  verticalAlign: "center",
+  className: styles.info,
+};
 
 const imageProps: Partial<IImageProps> = {
   src: IMAGES.logo.horizontal_light,
@@ -21,16 +28,12 @@ const textProps: ITextProps = {
 const Footer = () => (
   <footer className={styles.footer}>
     <div className={styles.line} />
-    <div className={styles.info}>
-
+    <Stack {...stackProps}>
       <Image {...imageProps} />
-
-      <div>
-        <Text {...textProps} color={theme.white}>
-          © 2022 Rectoral Board - All rights reserved
-        </Text>
-      </div>
-    </div>
+      <Text {...textProps} color={theme.white}>
+        © 2022 Rectoral Board - All rights reserved
+      </Text>
+    </Stack>
   </footer>
 );
 
