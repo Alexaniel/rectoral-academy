@@ -20,7 +20,21 @@
     @include breakpoint(md) { padding: 8px 24px; }
     @include breakpoint(lg) { padding: 8px 32px; }
     @include breakpoint(xl) { padding: 8px 120px; }
+  }
+  
+  .socialIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
 
-    span { color: $white; }
+    &:last-child { margin-right: 0; }
+    &:first-child { margin-left: 32px; }
+
+    svg {
+      fill: $white;
+      height: 24px;
+      width: 24px;
+    }
   }
 }
