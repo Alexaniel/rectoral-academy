@@ -4,47 +4,20 @@ import {
   Route,
 } from 'react-router-dom';
 
-import Purpose from '../screens/Purpose';
-import Sense from '../screens/Sense';
-import Training from '../screens/Training';
-import Target from '../screens/Target';
-
+import Curses from '../screens/Curses';
 import DashboardRouter from './DashboardRouter';
 
 import { Layout } from '../components/Layout';
+import { Footer } from '../components/Footer';
 
 export const AppRouter = () => (
   <Router>
     <Routes>
       <Route
-        path="/purpose"
+        path="/curses"
         element={(
           <Layout>
-            <Purpose />
-          </Layout>
-        )}
-      />
-      <Route
-        path="/sense-180"
-        element={(
-          <Layout>
-            <Sense />
-          </Layout>
-        )}
-      />
-      <Route
-        path="/training-gap"
-        element={(
-          <Layout>
-            <Training />
-          </Layout>
-        )}
-      />
-      <Route
-        path="/target"
-        element={(
-          <Layout>
-            <Target />
+            <Curses />
           </Layout>
         )}
       />

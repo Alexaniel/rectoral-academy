@@ -1,8 +1,6 @@
-import { Navbar } from '../components/Navbar';
-
 const Training = () => (
   <div>
-    <Navbar />
+    <h1>Training</h1>
   </div>
 );
 

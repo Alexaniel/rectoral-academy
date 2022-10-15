@@ -1,8 +1,6 @@
-import { Navbar } from '../components/Navbar';
-
 const Purpose = () => (
   <div>
-    <Navbar />
+    <h1>Purpose</h1>
   </div>
 );
 

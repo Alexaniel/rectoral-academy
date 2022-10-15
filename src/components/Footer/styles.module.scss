@@ -1,0 +1,29 @@
+@import '../../styles/utils';
+@import '../../styles/variables';
+
+.footer {
+  background-color: $themeDark;
+  padding: 8px 0;
+  width: 100%;
+  
+  .line {
+    background-color: $white;
+    height: 1px;
+    margin: 8px 0;
+    width: 100%;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 48px;
+    width: 100%;
+
+    @include breakpoint(md) { padding: 8px 24px; }
+    @include breakpoint(lg) { padding: 8px 32px; }
+    @include breakpoint(xl) { padding: 8px 120px; }
+
+    span { color: $white; }
+  }
+}

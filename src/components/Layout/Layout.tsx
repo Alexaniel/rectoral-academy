@@ -1,9 +1,10 @@
-import styles from './styles.module.scss';
+import { Footer } from '../Footer';
 
 const Layout = ({ children }: { children: any }) => (
-  <div className={styles.layout}>
+  <>
     {children}
-  </div>
+    <Footer />
+  </>
 );
 
 export default Layout;

@@ -1,14 +1,23 @@
-import { useTranslation } from 'react-i18next';
 import { Navbar } from '../components/Navbar';
+import { Portrait } from '../components/Portrait';
+import { Sense } from '../components/Sense';
+import { Training } from '../components/Training';
+import { Purpose } from '../components/Purpose';
+import { Target } from '../components/Target';
+import { Sponsors } from '../components/Sponsors';
 
-const Home = () => {
-  const { t } = useTranslation('shared');
+import styles from '../components/Layout/styles.module.scss';
 
-  return (
-    <div>
-      <Navbar />
-    </div>
-  );
-};
+const Home = () => (
+  <div className={styles.layout}>
+    <Navbar />
+    <Portrait />
+    <Sense />
+    <Purpose />
+    <Target />
+    <Training />
+    <Sponsors />
+  </div>
+);
 
 export default Home;

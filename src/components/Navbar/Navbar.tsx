@@ -1,7 +1,7 @@
 import cs from 'classnames';
 
 import { useEffect, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { BiMenu } from 'react-icons/bi';
@@ -40,48 +40,41 @@ export interface IOption {
 const Navbar = () => {
   initializeIcons();
   const { t } = useTranslation('shared', { keyPrefix: 'NAVBAR' });
-  const [optionActive, setOptionActive] = useState<IOption>();
+  const [optionActive, setOptionActive] = useState<string | undefined>('');
   const [isPanelOpen, { setTrue: showPanel, setFalse: dismissPanel }] = useBoolean(false);
-
-  const navigate = useNavigate();
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   const menu: IOption[] = [
     {
       key: 'home',
-      url: '/',
+      url: '#',
       name: t('HOME'),
     },
     {
       key: 'purpose',
-      url: '/purpose',
+      url: '#purpose',
       name: t('PURPOSE'),
     },
     {
       key: 'sense-180',
-      url: '/sense-180',
+      url: '#sense-180',
       name: t('SENSE_180'),
     },
     {
       key: 'training-gap',
-      url: '/training-gap',
+      url: '#training-gap',
       name: t('TRAINING_GAP'),
     },
     {
       key: 'target',
-      url: '/target',
+      url: '#target',
       name: t('TARGET'),
     },
   ];
 
-  const handleChangeOption = (item: IOption): void => {
-    setOptionActive(item);
-    navigate(item.url);
-  };
-
   useEffect(() => {
-    const option = menu.find((item) => item.url.includes(pathname));
-    setOptionActive(option);
+    const option = menu.find((item) => item.url === hash);
+    setOptionActive(!option ? 'home' : option.key);
   }, [pathname]);
 
   return (
@@ -102,18 +95,19 @@ const Navbar = () => {
       <div className={styles.containerMenu}>
         {
           menu.map((item) => (
-            <div
-              key={item.key}
-              onClick={() => handleChangeOption(item)}
-              className={cs(
-                styles.option,
-                { [styles.active]: optionActive && optionActive.key === item.key },
-              )}
-            >
-              <Text {...textProps}>
-                {item.name}
-              </Text>
-            </div>
+            <Link to={item.url} key={item.key}>
+              <div
+                onClick={() => setOptionActive(item.key)}
+                className={cs(
+                  styles.option,
+                  { [styles.active]: optionActive === item.key },
+                )}
+              >
+                <Text {...textProps}>
+                  {item.name}
+                </Text>
+              </div>
+            </Link>
           ))
         }
         <SwitchLanguage />
