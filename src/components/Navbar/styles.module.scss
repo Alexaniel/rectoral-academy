@@ -6,7 +6,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
+  padding: 40px 48px;
+
+  @include breakpoint(md) { padding: 40px 24px; }
+  @include breakpoint(lg) { padding: 40px 32px; }
+  @include breakpoint(xl) { padding: 40px 120px; }
 
   .containerMenu {
     align-items: center;

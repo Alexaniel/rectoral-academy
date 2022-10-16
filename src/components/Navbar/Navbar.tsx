@@ -47,27 +47,27 @@ const Navbar = () => {
   const menu: IOption[] = [
     {
       key: 'home',
-      url: '#',
+      url: '/#',
       name: t('HOME'),
     },
     {
       key: 'purpose',
-      url: '#purpose',
+      url: '/#purpose',
       name: t('PURPOSE'),
     },
     {
       key: 'sense-180',
-      url: '#sense-180',
+      url: '/#sense-180',
       name: t('SENSE_180'),
     },
     {
       key: 'training-gap',
-      url: '#training-gap',
+      url: '/#training-gap',
       name: t('TRAINING_GAP'),
     },
     {
       key: 'target',
-      url: '#target',
+      url: '/#target',
       name: t('TARGET'),
     },
   ];

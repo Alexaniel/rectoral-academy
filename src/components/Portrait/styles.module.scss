@@ -19,3 +19,16 @@
   padding: 0 32px;
   @include breakpoint(md) { display: block; padding: 0; }
 }
+
+
+.slogan {
+  color: $themeDark;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  padding-left: 0;
+  margin-top: 16px;
+  border-radius: 8px;
+  width: fit-content;
+  background: linear-gradient(268.74deg, #E6E6E6 -5.85%, rgba(245, 245, 245, 0) 107.54%);
+}

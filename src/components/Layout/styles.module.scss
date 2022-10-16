@@ -13,8 +13,9 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  padding-bottom: 56px !important;
 
-  @include breakpoint(md) { padding: 40px 24px; }
-  @include breakpoint(lg) { padding: 40px 32px; }
-  @include breakpoint(xl) { padding: 56px 120px; }
+  @include breakpoint(md) { padding: 0px 24px; }
+  @include breakpoint(lg) { padding: 0px 32px; }
+  @include breakpoint(xl) { padding: 0px 120px; }
 }

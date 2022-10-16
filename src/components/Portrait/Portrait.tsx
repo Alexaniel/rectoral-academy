@@ -92,6 +92,14 @@ const Portrait = () => {
           <Text variant="xxLarge" styles={subtitleStyles}>
             {t('DESCRIPTION')}
           </Text>
+          <Text
+            variant="xxLarge"
+            nowrap
+            block
+            className={styles.slogan}
+          >
+            {t('FOR_THE_NEXT')}
+          </Text>
           <Stack
             horizontal
             horizontalAlign="start"
