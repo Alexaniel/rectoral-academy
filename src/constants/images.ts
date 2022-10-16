@@ -8,6 +8,7 @@ const IMAGES = {
   },
   portrait: {
     main: `${BUCKET_URL}/portraits/main.svg`,
+    presentation: `${BUCKET_URL}/portraits/presentation.svg`,
   },
 };
 

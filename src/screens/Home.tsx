@@ -1,5 +1,6 @@
 import { Navbar } from '../components/Navbar';
 import { Portrait } from '../components/Portrait';
+import { Slides } from '../components/Slides';
 import { Sense } from '../components/Sense';
 import { Training } from '../components/Training';
 import { Purpose } from '../components/Purpose';
@@ -12,6 +13,7 @@ const Home = () => (
   <div className={styles.layout}>
     <Navbar />
     <Portrait />
+    <Slides />
     <Sense />
     <Purpose />
     <Target />

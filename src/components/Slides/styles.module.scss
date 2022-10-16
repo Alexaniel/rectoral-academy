@@ -1,0 +1,27 @@
+@import '../../styles/utils.scss';
+@import '../../styles/variables.scss';
+
+.slides {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @include breakpoint(md) {
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 48px;
+  }
+
+  .__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: -8%;
+    position: absolute;
+    top: 0;
+    width: 120%;
+  }
+}

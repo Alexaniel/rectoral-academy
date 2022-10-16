@@ -1,27 +1,21 @@
 @import '../../styles/utils.scss';
 @import '../../styles/variables.scss';
 
-.portrait {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.portraitStack {
+  width: 100%;
+  height: 100%;
   position: relative;
+  padding: 120px 0;
 
-  @include breakpoint(md) {
-    justify-content: flex-end;
-    align-items: center;
-    padding-bottom: 48px;
+  @include breakpoint(md) { 
+    height: 80vh;
+    padding: 0;
   }
+}
 
-  .__image {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    left: -8%;
-    position: absolute;
-    top: 0;
-    width: 120%;
-  }
+.presentation {
+  display: none;
+  margin: 0 auto;
+  padding: 0 32px;
+  @include breakpoint(md) { display: block; padding: 0; }
 }
