@@ -19,7 +19,13 @@
 
     @include breakpoint(md) { padding: 8px 24px; }
     @include breakpoint(lg) { padding: 8px 32px; }
-    @include breakpoint(xl) { padding: 8px 120px; }
+    @include breakpoint(xl) { padding: 8px 64px; }
+    @include breakpoint(xxl) { padding: 8px 128px; }
+  }
+
+  .copyright {
+    display: none;
+    @include breakpoint(md) { display: flex; }
   }
   
   .socialIcon {

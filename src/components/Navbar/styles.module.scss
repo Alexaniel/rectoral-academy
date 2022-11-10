@@ -10,7 +10,8 @@
 
   @include breakpoint(md) { padding: 40px 24px; }
   @include breakpoint(lg) { padding: 40px 32px; }
-  @include breakpoint(xl) { padding: 40px 120px; }
+  @include breakpoint(xl) { padding: 40px 64px; }
+  @include breakpoint(xxl) { padding: 40px 128px; }
 
   .containerMenu {
     align-items: center;

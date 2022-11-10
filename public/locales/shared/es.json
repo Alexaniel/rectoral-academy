@@ -13,5 +13,8 @@
     "SENSE_180": "Sentido 180",
     "TRAINING_GAP": "Brecha formativa",
     "TARGET": "Público Objetivo"
+  },
+  "ACTIONS": {
+    "BACK": "Atrás"
   }
 }

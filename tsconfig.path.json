@@ -1,28 +1,15 @@
 {
-  "compilerOptions":{
-      "baseUrl":".",
-      "paths":{
-          "@/components/*":[
-            "./src/components/*"
-          ],
-          "@/styles/*":[
-            "./src/styles/*"
-          ],
-          "@/api/*":[
-            "./src/api/*"
-          ],
-          "@/types/*":[
-            "./src/types/*"
-          ],
-          "@/const/*":[
-            "./src/const/*"
-          ],
-          "@/actions/*":[
-            "./src/actions/*"
-          ],
-          "@/screens/*":[
-            "./src/screens/*"
-          ],
-      }
-  }
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/components/*": ["./src/components/*"],
+			"@/styles/*": ["./src/styles/*"],
+			"@/api/*": ["./src/api/*"],
+			"@/interfaces/*": ["./src/interfaces/*"],
+			"@/const/*": ["./src/const/*"],
+			"@/actions/*": ["./src/actions/*"],
+			"@/reducers/*": ["./src/reducers/*"],
+			"@/screens/*": ["./src/screens/*"]
+		}
+	}
 }

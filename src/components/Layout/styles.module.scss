@@ -17,5 +17,6 @@ body {
 
   @include breakpoint(md) { padding: 0px 24px; }
   @include breakpoint(lg) { padding: 0px 32px; }
-  @include breakpoint(xl) { padding: 0px 120px; }
+  @include breakpoint(xl) { padding: 0px 64px; }
+  @include breakpoint(xxl) { padding: 0px 128px; }
 }

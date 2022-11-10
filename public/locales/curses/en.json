@@ -1,0 +1,18 @@
+{
+  "CURSES": {
+    "HEADER": "Courses Library"
+  },
+  "SEARCH_CURSES": {
+    "HEADER": "Search curse",
+    "SUBHEADER": "¡Develop your University Executive Education competences!",
+    "PLACEHOLDER": "Search curse",
+    "HELP": "",
+    "FILTER": "Filter courses by",
+    "CATEGORY": "Category",
+    "SELECT_CATEGORY": "Select category",
+    "TYPE": "Type of curse",
+    "SELECT_TYPE": "Select type",
+    "MODALITY": "Modality",
+    "SELECT_MODALITY": "Select modality"
+  }
+}

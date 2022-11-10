@@ -7,15 +7,15 @@ import { Target } from '../components/Target';
 import { Sponsors } from '../components/Sponsors';
 
 const Home = () => (
-  <>
-    <Portrait />
-    <Slides />
-    <Sense />
-    <Purpose />
-    <Target />
-    <Training />
-    <Sponsors />
-  </>
+    <>
+        <Portrait />
+        <Slides />
+        <Sense />
+        <Purpose />
+        <Target />
+        <Training />
+        <Sponsors />
+    </>
 );
 
 export default Home;

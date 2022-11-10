@@ -1,0 +1,18 @@
+{
+  "CURSES": {
+    "HEADER": ""
+  },
+  "SEARCH_CURSES": {
+    "HEADER": "Buscar Cursos",
+    "SUBHEADER": "¡Desarrolla tus competencias de Formación Ejectutiva Universitaria!",
+    "PLACEHOLDER": "Buscar cursos",
+    "HELP": "",
+    "FILTER": "Filtrar cursos por",
+    "CATEGORY": "Categoría",
+    "SELECT_CATEGORY": "Seleccionar categoría",
+    "TYPE": "Tipo de curso",
+    "SELECT_TYPE": "Seleccionar tipo",
+    "MODALITY": "Modalidad",
+    "SELECT_MODALITY": "Seleccionar modalidad"
+  }
+}
