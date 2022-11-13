@@ -26,6 +26,22 @@
         "COURSE_START_DATE": "Fecha de inicio del curso",
         "SYLLABUS": "Plan de estudios",
         "METHODOLOGY": "Metodología",
-        "PROFILE_OF_GRADUATION": "Perfil de egreso"
+        "PROFILE_OF_GRADUATION": "Perfil de egreso",
+        "FORMAL_PROGRAM": "Programa formal",
+        "INFORMAL_PROGRAM": "Programa informal",
+        "DIPLOMATE": "Diplomado",
+        "MASTERCLASS": "Masterclass",
+        "MASTER": "Maestría",
+        "PhD": "Doctorado",
+        "DIRECTIVES": "Directivos y Liderazgos Universitarios",
+        "MENTORS": "Mentores",
+        "LANGUAGES": "Idiomas",
+        "ABOUT": "Acerca de",
+        "GBR": "Inglés",
+        "ESP": "Español",
+        "FRA": "Francés",
+        "GNB": "Portugués",
+        "VIRTUAL": "Virtual",
+        "PRESENCIAL": "Presencial"
     }
 }

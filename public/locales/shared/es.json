@@ -16,5 +16,13 @@
   },
   "ACTIONS": {
     "BACK": "Atrás"
+  },
+  "CONTACT": {
+    "PHONE": "Teléfono",
+    "EMAIL": "Correo electrónico",
+    "ADDRESS": "Dirección",
+    "CITY": "Ciudad",
+    "COUNTRY": "País",
+    "NO_AVAILABLE": "No disponible"
   }
 }

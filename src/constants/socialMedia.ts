@@ -1,12 +1,4 @@
-export interface ISocialMedia {
-  keyName: string;
-  name: string;
-  link: string;
-}
-
-export interface ISocialMediaList {
-  [key: string]: ISocialMedia
-}
+import { ISocialMediaList } from '../interfaces';
 
 export const NAMES = {
     FACEBOOK: 'FACEBOOK',

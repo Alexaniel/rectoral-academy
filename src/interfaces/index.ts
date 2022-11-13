@@ -7,3 +7,5 @@ export * from './studyPlan';
 export * from './teacher';
 export * from './meta';
 export * from './http';
+export * from './socialMedia';
+export * from './contact';

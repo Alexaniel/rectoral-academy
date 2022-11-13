@@ -1,22 +1,15 @@
 import moment from 'moment';
 import { useTranslation } from 'react-i18next';
 import { Text } from '@fluentui/react/lib/Text';
-import { labelProps, valueProps } from './elementsProperties';
+import { FontIcon } from '@fluentui/react/lib/Icon';
+import { mergeStyles } from '@fluentui/react/lib/Styling';
+import { labelProps, valueProps } from '../elementsProperties';
 
 import styles from '../styles.module.scss';
 
 interface IInformationProps {
-    createdAt: Date;
     modality: string;
     inversion: number;
-    targetAudience: string[] | [];
-    registeredBy: string;
-    offerType: string;
-    offerSubType: string;
-    offerPeriod: {
-        startDate: Date;
-        endDate: Date;
-    },
     enrollmentData: {
         startDate: Date;
         endDate: Date;
@@ -25,17 +18,18 @@ interface IInformationProps {
 }
 
 const Information = ({
-    createdAt,
     modality,
     inversion,
-    targetAudience,
-    registeredBy,
-    offerType,
-    offerSubType,
-    offerPeriod,
     enrollmentData,
 }: IInformationProps) => {
     const { t } = useTranslation('curses', { keyPrefix: 'DETAIL' });
+
+    const iconClass = mergeStyles({
+        fontSize: 20,
+        height: 20,
+        width: 20,
+        margin: '0 8px 0 0',
+    });
 
     return (
         <div className={styles.information}>
@@ -47,11 +41,15 @@ const Information = ({
                 {t('MODALITY')}
             </Text>
             <Text
-                variant="mediumPlus"
-                block
+                variant="large"
                 styles={valueProps}
             >
-                {modality}
+                <FontIcon
+                    aria-label={modality}
+                    iconName={modality === 'VIRTUAL' ? 'Telemarketer' : 'Teamwork'}
+                    className={iconClass}
+                />
+                {t(modality)}
             </Text>
             <Text
                 variant="large"
@@ -61,11 +59,15 @@ const Information = ({
                 {t('INVERSION')}
             </Text>
             <Text
-                variant="mediumPlus"
-                block
+                variant="large"
                 styles={valueProps}
             >
-                {inversion}
+                <FontIcon
+                    aria-label="Money"
+                    iconName="Money"
+                    className={iconClass}
+                />
+                {`${inversion},00`}
             </Text>
 
             <Text
@@ -80,8 +82,7 @@ const Information = ({
                 enrollmentData?.isNext
                     ? (
                         <Text
-                            variant="mediumPlus"
-                            block
+                            variant="large"
                             styles={valueProps}
                         >
                             {t('NOT_ENROLLMENT_DATE')}
@@ -89,10 +90,14 @@ const Information = ({
                     )
                     : (
                         <Text
-                            variant="mediumPlus"
-                            block
+                            variant="large"
                             styles={valueProps}
                         >
+                            <FontIcon
+                                aria-label="InsertSignatureLine"
+                                iconName="InsertSignatureLine"
+                                className={iconClass}
+                            />
                             {
                                 `${moment(enrollmentData?.startDate).format('ll')} - 
                                 ${moment(enrollmentData?.endDate).format('ll')}`
@@ -110,13 +115,15 @@ const Information = ({
             </Text>
 
             <Text
-                variant="mediumPlus"
-                block
+                variant="large"
                 styles={valueProps}
             >
-                {
-                    `${moment(enrollmentData?.startDate).format('ll')}`
-                }
+                <FontIcon
+                    aria-label="Calendar"
+                    iconName="Calendar"
+                    className={iconClass}
+                />
+                { `${moment(enrollmentData?.startDate).format('ll')}`}
             </Text>
 
         </div>

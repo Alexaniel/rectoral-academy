@@ -14,5 +14,11 @@
     "SELECT_TYPE": "Select type",
     "MODALITY": "Modality",
     "SELECT_MODALITY": "Select modality"
+  },
+  "DETAIL": {
+    "FORMAL_PROGRAM": "Forma program",
+    "INFORMAL_PROGRAM": "Informal program",
+    "DIPLOMATE": "Diplomate",
+    "DIRECTIVES": "Directives and leaderships"
   }
 }

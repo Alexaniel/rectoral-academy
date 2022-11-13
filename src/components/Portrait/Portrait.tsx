@@ -5,6 +5,7 @@ import {
 import { Image, IImageProps } from '@fluentui/react/lib/Image';
 import { Text, ITextStyles } from '@fluentui/react/lib/Text';
 
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { theme } from '../../theme';
 import IMAGES from '../../constants/images';
@@ -63,6 +64,7 @@ const buttonStyles: Partial<IButtonStyles> = {
 
 const Portrait = () => {
     const { t } = useTranslation('home', { keyPrefix: 'PORTRAIT' });
+    const navigate = useNavigate();
     return (
         <Stack {...portraitStackProps}>
             <Stack {...stackProps}>
@@ -106,7 +108,10 @@ const Portrait = () => {
                         verticalAlign="center"
                         style={{ marginTop: 32 }}
                     >
-                        <PrimaryButton styles={buttonStyles}>
+                        <PrimaryButton
+                            styles={buttonStyles}
+                            onClick={() => navigate('/curses')}
+                        >
                             <Text
                                 variant="large"
                                 style={{ color: theme.white, fontWeight: 600 }}

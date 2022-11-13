@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { IIconProps, IStyle } from '@fluentui/react';
+import { IIconProps } from '@fluentui/react';
 import { ActionButton, IButtonStyles } from '@fluentui/react/lib/Button';
 import { Text, ITextStyles } from '@fluentui/react/lib/Text';
 import { useTranslation } from 'react-i18next';
@@ -15,13 +14,15 @@ const addFriendIcon: IIconProps = {
         root: {
             fontSize: 16,
             color: theme.themeDark,
+            fontWeight: 600,
+            verticalAlign: 'middle',
         },
     },
 };
 
 const textProps: Partial<ITextStyles> = {
     root: {
-        fontWeight: 500,
+        fontWeight: 600,
         color: theme.themeDark,
     },
 };

@@ -1,0 +1,11 @@
+export enum TYPES_PROGRAM {
+    FORMAL = 'FORMAL',
+    INFORMAL = 'INFORMAL'
+}
+
+export enum SUB_TYPES_PROGRAM {
+    DIPLOMATE = 'DIPLOMATE',
+    MASTERCLASS = 'MASTERCLASS',
+    MASTER = 'MASTER',
+    PhD = 'PhD'
+}

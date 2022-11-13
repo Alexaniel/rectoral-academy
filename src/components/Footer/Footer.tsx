@@ -10,7 +10,8 @@ import {
     AiFillInstagram,
     AiFillYoutube,
 } from 'react-icons/ai';
-import { ISocialMedia, NAMES, SOCIAL_MEDIA_LIST } from '../../constants/socialMedia';
+import { NAMES, SOCIAL_MEDIA_LIST } from '../../constants/socialMedia';
+import { ISocialMedia } from '../../interfaces';
 import IMAGES from '../../constants/images';
 import styles from './styles.module.scss';
 

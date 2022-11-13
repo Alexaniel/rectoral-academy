@@ -1,0 +1,54 @@
+@import '../../styles/variables';
+@import '../../styles/utils';
+
+.contact {
+    margin: 24px 0 16px 0;
+    background-color: $neutralLighter;
+    border-radius: 8px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 16px;
+    
+    @include breakpoint (md) {
+        flex-direction: row;
+        align-items: center;
+        padding: 0 16px;
+    }
+}
+
+
+.socialMedia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    margin-top: 16px;
+
+    @include breakpoint(md) { margin: 0; }
+
+}
+
+.socialIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+
+    &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; }
+
+    svg {
+        fill: $themePrimary;
+        height: 28px;
+        width: 28px;
+    }
+
+    span { margin: 0; }
+
+    @include breakpoint(md) {
+        margin: 16px 0;
+    }
+}

@@ -1,5 +1,5 @@
 import { ITextStyles } from '@fluentui/react/lib/Text';
-import { theme } from '../../../theme';
+import { theme } from '../../theme';
 
 export const descriptionProps: Partial<ITextStyles> = {
     root: {
@@ -37,5 +37,7 @@ export const valueProps: Partial<ITextStyles> = {
         color: theme.themeDark,
         textAlign: 'left',
         marginBottom: 16,
+        display: 'flex',
+        alignItems: 'flex-start',
     },
 };

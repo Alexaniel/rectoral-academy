@@ -1,4 +1,4 @@
-import { Space } from 'antd';
+import { Row, Col, Space } from 'antd';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -9,9 +9,11 @@ import { getCurseById } from '../../../api/curses';
 import { ICurse } from '../../../interfaces';
 import { BackButton } from '../../../widgets/BackButton';
 import { Subheader } from '../../../widgets/Subheader';
-import { categoryProps, descriptionProps, labelProps } from './elementsProperties';
+import { categoryProps, descriptionProps, labelProps } from '../elementsProperties';
 
+import Description from './Description';
 import Information from './Information';
+import TeacherList from './TeacherList';
 import StudyPlan from './StudyPlan';
 
 import styles from '../styles.module.scss';
@@ -19,6 +21,9 @@ import styles from '../styles.module.scss';
 const CurseDetail = () => {
     const { t } = useTranslation('curses', { keyPrefix: 'DETAIL' });
     const [curse, setCurse] = useState<ICurse>({} as ICurse);
+
+    const typeProgram = t(curse?.offerType);
+    const subTypeProgram = t(curse?.offerSubType);
 
     const params = useParams();
     const { id } = params;
@@ -39,67 +44,44 @@ const CurseDetail = () => {
                 <BackButton path="/curses" />
                 <Subheader text={curse?.name} />
             </Space>
-            <Text
-                styles={labelProps}
-                style={{ marginTop: 16 }}
-                variant="medium"
-                block
-            >
-                {`${curse?.offerType} / ${curse?.offerSubType}`}
-            </Text>
-            <Text
-                styles={categoryProps}
-                variant="mediumPlus"
-                block
-            >
-                {curse?.categoryID?.keyName}
-            </Text>
 
-            <Text
-                variant="large"
-                block
-                styles={descriptionProps}
-            >
-                {curse?.description}
-            </Text>
-
-            <Information
-                createdAt={curse.createdAt}
-                modality={curse.modality}
-                inversion={curse.inversion}
-                targetAudience={curse.targetAudience}
-                registeredBy={curse.registeredBy}
-                offerType={curse.offerType}
-                offerSubType={curse.offerSubType}
-                offerPeriod={curse.offerPeriod}
-                enrollmentData={curse.enrollmentData}
+            <Description
+                description={curse?.description}
+                typeProgram={typeProgram}
+                subTypeProgram={subTypeProgram}
             />
 
-            <Text
-                styles={labelProps}
-                variant="xxLarge"
-                block
+            <Row
+                align="top"
+                style={{
+                    width: '100%',
+                    margin: '32px 0',
+                }}
             >
+                <Col xs={24} lg={16} xl={18}>
+                    <TeacherList teachers={curse?.teachers} />
+                </Col>
+                <Col xs={24} lg={8} xl={6}>
+                    <Information
+                        modality={curse.modality}
+                        inversion={curse.inversion}
+                        enrollmentData={curse.enrollmentData}
+                    />
+                </Col>
+
+            </Row>
+
+            <Text styles={labelProps} variant="xxLarge" block>
                 {t('SYLLABUS')}
             </Text>
 
-            <StudyPlan
-                studyPlan={curse?.studyPlanID}
-            />
+            <StudyPlan studyPlan={curse?.studyPlanID} />
 
-            <Text
-                styles={labelProps}
-                variant="xxLarge"
-                block
-            >
+            <Text styles={labelProps} variant="xxLarge" block>
                 {t('METHODOLOGY')}
             </Text>
 
-            <Text
-                variant="large"
-                block
-                styles={descriptionProps}
-            >
+            <Text variant="large" block styles={descriptionProps}>
                 {curse?.methodology}
             </Text>
 
