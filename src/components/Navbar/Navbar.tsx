@@ -42,37 +42,29 @@ const Navbar = () => {
     const [isPanelOpen, { setTrue: showPanel, setFalse: dismissPanel }] = useBoolean(false);
     const { pathname, hash } = useLocation();
 
+    const MAIN_PAGE: string = 'identity';
+
     const menu: IOption[] = [
         {
-            key: 'home',
-            url: '/#',
-            name: t('HOME'),
+            key: 'identity',
+            url: '/',
+            name: t('IDENTITY'),
         },
         {
-            key: 'purpose',
-            url: '/#purpose',
-            name: t('PURPOSE'),
+            key: 'portfolio',
+            url: '/curses',
+            name: t('PORTFOLIO'),
         },
         {
-            key: 'sense-180',
-            url: '/#sense-180',
-            name: t('SENSE_180'),
-        },
-        {
-            key: 'training-gap',
-            url: '/#training-gap',
-            name: t('TRAINING_GAP'),
-        },
-        {
-            key: 'target',
-            url: '/#target',
-            name: t('TARGET'),
+            key: 'contact',
+            url: '/contact',
+            name: t('CONTACT'),
         },
     ];
 
     useEffect(() => {
-        const option = menu.find((item) => item.url === hash);
-        setOptionActive(!option ? 'home' : option.key);
+        const option = menu.find((item) => item.url === pathname);
+        setOptionActive(!option ? MAIN_PAGE : option.key);
     }, [pathname]);
 
     return (

@@ -35,10 +35,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 8px;
+    margin: 0 16px;
+    cursor: pointer;
 
     &:first-child { margin-left: 0; }
     &:last-child { margin-right: 0; }
+
+    &:active { transform: scale(0.85); }
 
     svg {
         fill: $themePrimary;
@@ -49,6 +52,6 @@
     span { margin: 0; }
 
     @include breakpoint(md) {
-        margin: 16px 0;
+        margin: 16px 8px;
     }
 }

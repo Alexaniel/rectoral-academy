@@ -53,6 +53,7 @@ export const CursesProvider = ({ children }: { children: any }) => {
     const [error, setError] = useState<string>(initialContext.error);
 
     const fetchCategories = async () => {
+        setLoading(true);
         getCategories()
             .then(({ data }) => setCategories(data))
             .catch((err) => setError(err.message))
@@ -65,6 +66,7 @@ export const CursesProvider = ({ children }: { children: any }) => {
         modality?: string[],
         offerSubType?: string[],
     ) => {
+        setLoading(true);
         const query: any = {
             search, category, modality, offerSubType,
         };

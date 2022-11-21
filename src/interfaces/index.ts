@@ -9,3 +9,5 @@ export * from './meta';
 export * from './http';
 export * from './socialMedia';
 export * from './contact';
+export * from './membership';
+export * from './sponsor';

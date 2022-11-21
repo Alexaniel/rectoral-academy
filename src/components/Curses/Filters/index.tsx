@@ -46,6 +46,14 @@ const Filters = () => {
             value: 'MASTERCLASS',
             label: 'Masterclass',
         },
+        {
+            value: 'MASTER',
+            label: 'Master',
+        },
+        {
+            value: 'PhD',
+            label: 'Doctorado',
+        },
     ];
 
     const modalities: Option[] = [

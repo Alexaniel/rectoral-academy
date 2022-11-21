@@ -42,7 +42,7 @@ const Search = () => {
         alignItems: 'center',
     };
 
-    const fetchDebounced = useCallback<any>(debounce(fetchCurses, 500), []);
+    const fetchDebounced = useCallback<any>(debounce(fetchCurses, 300), []);
 
     const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { value } = e.target;

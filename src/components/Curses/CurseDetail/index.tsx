@@ -92,6 +92,22 @@ const CurseDetail = () => {
             >
                 {t('PROFILE_OF_GRADUATION')}
             </Text>
+
+            <Text
+                styles={labelProps}
+                variant="xxLarge"
+                block
+            >
+                {t('RELATED_CURSES')}
+            </Text>
+
+            <Text
+                styles={labelProps}
+                variant="xxLarge"
+                block
+            >
+                {t('CONTACT')}
+            </Text>
         </div>
     );
 };

@@ -49,8 +49,8 @@ const imageProps: Partial<IImageProps> = {
     src: IMAGES.portrait.presentation,
     alt: 'presentation rectoral board',
     loading: 'lazy',
-    width: 400,
-    height: 400,
+    width: 500,
+    height: 500,
     className: styles.presentation,
 };
 
@@ -96,7 +96,6 @@ const Portrait = () => {
                     </Text>
                     <Text
                         variant="xxLarge"
-                        nowrap
                         block
                         className={styles.slogan}
                     >

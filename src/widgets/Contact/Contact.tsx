@@ -78,7 +78,7 @@ const Contact = ({ data, email }: ContactProps) => {
                     size={8}
                     onClick={() => handleAction(`https://wa.me/${data.fullMobile}`)}
                 >
-                    <AiFillPhone />
+                    <AiFillPhone style={{ verticalAlign: 'middle', marginTop: 4 }} />
                     <Text variant="large" styles={valueProps}>
                         {`${data.countryCode} ${data.mobile}`}
                     </Text>
@@ -89,7 +89,7 @@ const Contact = ({ data, email }: ContactProps) => {
                     size={8}
                     onClick={() => handleAction(email)}
                 >
-                    <AiTwotoneMail />
+                    <AiTwotoneMail style={{ verticalAlign: 'middle', marginTop: 4 }} />
                     <Text variant="large" styles={valueProps}>
                         {email}
                     </Text>
