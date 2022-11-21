@@ -32,3 +32,21 @@
   width: fit-content;
   background: linear-gradient(268.74deg, #E6E6E6 -5.85%, rgba(245, 245, 245, 0) 107.54%);
 }
+
+.buttons {
+    flex-direction: column;
+    @include breakpoint(lg) {
+        flex-direction: row;
+    }
+
+    .button {
+        width: 100%;
+        margin-bottom: 16px;
+
+        @include breakpoint(lg) {
+            width: auto;
+            margin-bottom: 0;
+            margin-right: 16px;
+        }
+    }
+}

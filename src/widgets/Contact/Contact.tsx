@@ -1,4 +1,6 @@
-import { Space, message } from 'antd';
+import {
+    Space, message, Row, Col,
+} from 'antd';
 import { useTranslation } from 'react-i18next';
 import {
     AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare, AiFillPhone,
@@ -71,30 +73,34 @@ const Contact = ({ data, email }: ContactProps) => {
 
     return (
         <div className={styles.contact}>
-            <Space direction="horizontal" size={16}>
-                <Space
-                    className={styles.socialIcon}
-                    direction="horizontal"
-                    size={8}
-                    onClick={() => handleAction(`https://wa.me/${data.fullMobile}`)}
-                >
-                    <AiFillPhone style={{ verticalAlign: 'middle', marginTop: 4 }} />
-                    <Text variant="large" styles={valueProps}>
-                        {`${data.countryCode} ${data.mobile}`}
-                    </Text>
-                </Space>
-                <Space
-                    className={styles.socialIcon}
-                    direction="horizontal"
-                    size={8}
-                    onClick={() => handleAction(email)}
-                >
-                    <AiTwotoneMail style={{ verticalAlign: 'middle', marginTop: 4 }} />
-                    <Text variant="large" styles={valueProps}>
-                        {email}
-                    </Text>
-                </Space>
-            </Space>
+            <Row gutter={[16, 16]}>
+                <Col xs={24} md={12}>
+                    <Space
+                        className={styles.socialIcon}
+                        direction="horizontal"
+                        size={8}
+                        onClick={() => handleAction(`https://wa.me/${data.fullMobile}`)}
+                    >
+                        <AiFillPhone style={{ verticalAlign: 'middle', marginTop: 4 }} />
+                        <Text variant="large" styles={valueProps}>
+                            {`${data.countryCode} ${data.mobile}`}
+                        </Text>
+                    </Space>
+                </Col>
+                <Col xs={24} md={12}>
+                    <Space
+                        className={styles.socialIcon}
+                        direction="horizontal"
+                        size={8}
+                        onClick={() => handleAction(email)}
+                    >
+                        <AiTwotoneMail style={{ verticalAlign: 'middle', marginTop: 4 }} />
+                        <Text variant="large" styles={valueProps}>
+                            {email}
+                        </Text>
+                    </Space>
+                </Col>
+            </Row>
             <div className={styles.socialMedia}>
                 {
                     SOCIAL_MEDIA_LIST.map((item) => (

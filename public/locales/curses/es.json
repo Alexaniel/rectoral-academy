@@ -18,6 +18,7 @@
         "SELECT_MODALITY": "Seleccionar modalidad"
     },
     "DETAIL": {
+        "GETTING_CURSE": "Obteniendo curso...",
         "MODALITY": "Modalidad",
         "INVERSION": "Inversión",
         "TYPE": "Tipo de curso",
@@ -47,6 +48,6 @@
         "PRESENCIAL": "Presencial",
         "MODULE": "Módulo",
         "RELATED_CURSES": "Cursos relacionados",
-        "CONTACT": "Contacto"
+        "APPLY_TO_CURSE": "Aplicar al curso"
     }
 }

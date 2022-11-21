@@ -38,9 +38,8 @@ const CloudIcons = () => (
                         rel="noopener noreferrer"
                     >
                         <img
-                            width="80px"
-                            height="80px"
-                            style={{ objectFit: 'cover' }}
+                            width="164px"
+                            height="164px"
                             alt={sponsor.name}
                             src={sponsor.icon}
                         />

@@ -43,7 +43,7 @@ const Purpose = () => {
 
     return (
         <div className={styles.purpose}>
-            <Image {...plotHalfProps} />
+            <Image {...plotHalfProps} className={styles.image} />
             <Row gutter={[32, 24]} align="middle">
                 <Col xs={24} lg={12} className={styles.contMessage}>
                     <Text

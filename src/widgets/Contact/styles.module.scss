@@ -33,9 +33,10 @@
 
 .socialIcon {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin: 0 16px;
+    width: 100%;
     cursor: pointer;
 
     &:first-child { margin-left: 0; }

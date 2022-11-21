@@ -21,6 +21,7 @@ import styles from '../styles.module.scss';
 const CurseDetail = () => {
     const { t } = useTranslation('curses', { keyPrefix: 'DETAIL' });
     const [curse, setCurse] = useState<ICurse>({} as ICurse);
+    const [loading, setLoading] = useState<boolean>(true);
 
     const typeProgram = t(curse?.offerType);
     const subTypeProgram = t(curse?.offerSubType);
@@ -31,84 +32,94 @@ const CurseDetail = () => {
     const fetchCurseDetail = async (curseId: string) => {
         const { data } = await getCurseById(curseId);
         setCurse(data);
+        setLoading(false);
     };
 
     useEffect(() => {
         if (!id) return;
+        setLoading(true);
         fetchCurseDetail(id);
     }, [id]);
 
     return (
-        <div className={styles.curseDetail}>
-            <Space direction="vertical" size={16}>
-                <BackButton path="/curses" />
-                <Subheader text={curse?.name} />
-            </Space>
+        loading
+            ? (
+                <div className={styles.loadingCurses}>
+                    {t('GETTING_CURSE')}
+                </div>
+            )
+            : (
+                <div className={styles.curseDetail}>
+                    <Space direction="vertical" size={16}>
+                        <BackButton path="/curses" />
+                        <Subheader text={curse?.name} />
+                    </Space>
 
-            <Description
-                description={curse?.description}
-                typeProgram={typeProgram}
-                subTypeProgram={subTypeProgram}
-            />
-
-            <Row
-                align="top"
-                style={{
-                    width: '100%',
-                    margin: '32px 0',
-                }}
-            >
-                <Col xs={24} lg={16} xl={18}>
-                    <TeacherList teachers={curse?.teachers} />
-                </Col>
-                <Col xs={24} lg={8} xl={6}>
-                    <Information
-                        modality={curse.modality}
-                        inversion={curse.inversion}
-                        enrollmentData={curse.enrollmentData}
+                    <Description
+                        description={curse?.description}
+                        typeProgram={typeProgram}
+                        subTypeProgram={subTypeProgram}
                     />
-                </Col>
 
-            </Row>
+                    <Row
+                        align="top"
+                        style={{
+                            width: '100%',
+                            margin: '32px 0',
+                        }}
+                    >
+                        <Col xs={24} lg={16} xl={18}>
+                            <TeacherList teachers={curse?.teachers} />
+                        </Col>
+                        <Col xs={24} lg={8} xl={6}>
+                            <Information
+                                modality={curse.modality}
+                                inversion={curse.inversion}
+                                enrollmentData={curse.enrollmentData}
+                            />
+                        </Col>
 
-            <Text styles={labelProps} variant="xxLarge" block>
-                {t('SYLLABUS')}
-            </Text>
+                    </Row>
 
-            <StudyPlan studyPlan={curse?.studyPlanID} />
+                    <Text styles={labelProps} variant="xxLarge" block>
+                        {t('SYLLABUS')}
+                    </Text>
 
-            <Text styles={labelProps} variant="xxLarge" block>
-                {t('METHODOLOGY')}
-            </Text>
+                    <StudyPlan studyPlan={curse?.studyPlanID} />
 
-            <Text variant="large" block styles={descriptionProps}>
-                {curse?.methodology}
-            </Text>
+                    <Text styles={labelProps} variant="xxLarge" block>
+                        {t('METHODOLOGY')}
+                    </Text>
 
-            <Text
-                styles={labelProps}
-                variant="xxLarge"
-                block
-            >
-                {t('PROFILE_OF_GRADUATION')}
-            </Text>
+                    <Text variant="large" block styles={descriptionProps}>
+                        {curse?.methodology}
+                    </Text>
 
-            <Text
-                styles={labelProps}
-                variant="xxLarge"
-                block
-            >
-                {t('RELATED_CURSES')}
-            </Text>
+                    <Text
+                        styles={labelProps}
+                        variant="xxLarge"
+                        block
+                    >
+                        {t('PROFILE_OF_GRADUATION')}
+                    </Text>
 
-            <Text
-                styles={labelProps}
-                variant="xxLarge"
-                block
-            >
-                {t('CONTACT')}
-            </Text>
-        </div>
+                    <Text
+                        styles={labelProps}
+                        variant="xxLarge"
+                        block
+                    >
+                        {t('RELATED_CURSES')}
+                    </Text>
+
+                    <Text
+                        styles={labelProps}
+                        variant="xxLarge"
+                        block
+                    >
+                        {t('APPLY_TO_CURSE')}
+                    </Text>
+                </div>
+            )
     );
 };
 

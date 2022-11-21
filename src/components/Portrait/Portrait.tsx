@@ -106,9 +106,11 @@ const Portrait = () => {
                         horizontalAlign="start"
                         verticalAlign="center"
                         style={{ marginTop: 32 }}
+                        className={styles.buttons}
                     >
                         <PrimaryButton
                             styles={buttonStyles}
+                            className={styles.button}
                             onClick={() => navigate('/curses')}
                         >
                             <Text
@@ -118,7 +120,11 @@ const Portrait = () => {
                                 {t('SEE_CURSES')}
                             </Text>
                         </PrimaryButton>
-                        <DefaultButton styles={buttonStyles}>
+                        <DefaultButton
+                            styles={buttonStyles}
+                            className={styles.button}
+                            /* TO DO - Action to info modal */
+                        >
                             <Text variant="large" style={{ fontWeight: 600 }}>
                                 {t('REQUEST_INFORMATION')}
                             </Text>

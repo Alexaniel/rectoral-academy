@@ -44,6 +44,11 @@
     padding: 48px 0;
     z-index: 2;
 
+    .image {
+        display: none;
+        @include breakpoint(md) { display: block; }
+    }
+
     .message {
         font-size: 24px;
         font-weight: 500;
