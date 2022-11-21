@@ -34,6 +34,7 @@ module.exports = {
         'react/jsx-indent': [1, 4],
         'react/jsx-indent-props': [1, 4],
         'no-unused-expressions': 0,
+        'no-nested-ternary': 0,
         'import/no-extraneous-dependencies': 0,
         'react/jsx-no-constructed-context-values': 0,
         'react/jsx-props-no-spreading': 0,
