@@ -1,12 +1,49 @@
 {
-  "PORTRAIT": {
-    "PROGRAM_ACADEMY": "Programa Academy",
-    "BOARD": "BOARD",
-    "IES": "IES",
-    "DESCRIPTION": "Para la Formación de Ejecutiva de Liderazgos de la Eduación Superior",
-    "SEE_CURSES": "Ver Cursos",
-    "REQUEST_INFORMATION": "Solicitar Información",
-    "FOR_THE_NEXT": "Para los próximos 30 años",
-    "SLOGAN": "Desarrolla tus competencias de Formación Ejecutiva Universitaria"
-  }
+    "PORTRAIT": {
+        "PROGRAM_ACADEMY": "Rectoral Board Academy",
+        "BOARD": "BOARD",
+        "IES": "IES",
+        "DESCRIPTION": "Para la Formación de Ejecutiva de Liderazgos de la Eduación Superior",
+        "SEE_CURSES": "Ver Portafolio",
+        "REQUEST_INFORMATION": "Solicitar Información",
+        "FOR_THE_NEXT": "Para los próximos 30 años",
+        "SLOGAN": "Desarrolla tus competencias de Formación Ejecutiva Universitaria"
+    },
+    "SENSE": {
+        "SENSE_180": "Sentido 180º",
+        "NEW_SENSE": "Un nuevo sentido",
+        "CHANGE_DIRECTION": "Un cambio de dirección",
+        "FULL_TURNAROUND": "Un giro total"
+    },
+    "PURPOSE": {
+        "HEADER": "Propósito",
+        "MESSAGE": "Contribuir con el desarrollo progresivo de la <b>humanización de la civilización</b> por medio de la <b>educación permanente</b> de una nueva generación del <b>board</b> de la educación superior.",
+        "TAGS": {
+            "HUMANIZATION": "Humanización",
+            "EDUCATION": "Educación",
+            "BOARD": "Board",
+            "HIGHER_EDUCATION": "Educación Superior",
+            "REMEMBER": "Recuerda",
+            "RESCUE": "Rescata",
+            "RECONNECT": "Reconecta",
+            "REINVENT": "Reinventa",
+            "MEANS": "Significa",
+            "ACkNOWLEDGES": "Reconoce"
+        }
+    },
+    "TARGET": {
+        "AUDIENCE": "Público Objetivo",
+        "GOLD": "Gold",
+        "TARGET_GOLD": "Directivos y Liderazgos Universitarios",
+        "PURPOSE_GOLD": "Contribuir con la formación de una nueva generación del board universitarios para los próximos 30 años, desde una mirada sistémica, humana y global de la educación.",
+        "PLATINUM": "Platinum",
+        "TARGET_PLATINUM": "Rectores / Ministros / Presidentes de Redes",
+        "PURPOSE_PLATINUM": "Potenciar capacidades, competencias, concientización y el compromiso con la transformación social, por medio de la educación global como un bien común para que nadie se quede atrás.",
+        "DIAMOND": "Diamond",
+        "TARGET_DIAMOND": "exRectores, exMinistros, y exPresidentes de Redes",
+        "PURPOSE_DIAMOND": "Mantener activo el conocimiento del quehacer educación superior, la experiencia aplicada, los relacionamientos conquistados, los sueños renovados y las aspiraciones de la humanización de la civilización."
+    },
+    "SPONSORS": {
+        "REGIONAL_PARTNERS": "Partners Regionales"        
+    }
 }

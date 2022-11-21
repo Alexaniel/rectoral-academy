@@ -1,6 +1,8 @@
 {
+    "GETTING_CURSES": "Obteniendo cursos...",
+    "NO_CURSES": "No hay cursos",
     "CURSES": {
-        "HEADER": "Biblioteca de Cursos"
+        "HEADER": "Portafolio de Cursos"
     },
     "SEARCH": {
         "HEADER": "Buscar Cursos",
@@ -42,6 +44,9 @@
         "FRA": "Francés",
         "GNB": "Portugués",
         "VIRTUAL": "Virtual",
-        "PRESENCIAL": "Presencial"
+        "PRESENCIAL": "Presencial",
+        "MODULE": "Módulo",
+        "RELATED_CURSES": "Cursos relacionados",
+        "CONTACT": "Contacto"
     }
 }

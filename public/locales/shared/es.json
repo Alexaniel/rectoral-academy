@@ -1,28 +1,47 @@
 {
-  "LOADING": "Cargando...",
-  "LANGUAGES": {
-    "SPANISH": "ES",
-    "ENGLISH": "EN",
-    "PORTUGUESE": "PT"
-  },
-  "MAIN_MENU": "Menú principal",
-  "CHANGE_LANGUAGE": "Cambiar idioma",
-  "NAVBAR": {
-    "HOME": "Inicio",
-    "PURPOSE": "Propósito",
-    "SENSE_180": "Sentido 180",
-    "TRAINING_GAP": "Brecha formativa",
-    "TARGET": "Público Objetivo"
-  },
-  "ACTIONS": {
-    "BACK": "Atrás"
-  },
-  "CONTACT": {
-    "PHONE": "Teléfono",
-    "EMAIL": "Correo electrónico",
-    "ADDRESS": "Dirección",
-    "CITY": "Ciudad",
-    "COUNTRY": "País",
-    "NO_AVAILABLE": "No disponible"
-  }
+    "LOADING": "Cargando...",
+    "LANGUAGES": {
+        "SPANISH": "ES",
+        "ENGLISH": "EN",
+        "PORTUGUESE": "PT"
+    },
+    "MAIN_MENU": "Menú principal",
+    "CHANGE_LANGUAGE": "Cambiar idioma",
+    "NAVBAR": {
+        "HOME": "Inicio",
+        "PURPOSE": "Propósito",
+        "SENSE_180": "Sentido 180",
+        "TRAINING_GAP": "Brecha formativa",
+        "IDENTITY": "Identidad",
+        "TARGET": "Público Objetivo",
+        "PORTFOLIO": "Portafolio",
+        "PARTNERS": "Aliados",
+        "CONTACT": "Contacto"
+    },
+    "ACTIONS": {
+        "BACK": "Atrás"
+    },
+    "CONTACT": {
+        "PHONE": "Teléfono",
+        "EMAIL": "Correo electrónico",
+        "ADDRESS": "Dirección",
+        "CITY": "Ciudad",
+        "COUNTRY": "País",
+        "NO_AVAILABLE": "No disponible"
+    },
+    "MEMBERSHIP": {
+        "CATEGORY": "Categoría",
+        "GOLD": {
+            "TARGET": "",
+            "PURPOSE": "Contribuir con la formación de una nueva generación del board universitarios para los próximos 30 años, desde una mirada sistémica, humana y global de la educación."
+        },
+        "PLATINUM": {
+            "TARGET": "",
+            "PURPOSE": "Potenciar capacidades, competencias, concientización y el compromiso con la transformación social, por medio de la educación global como un bien común para que nadie se quede atrás."
+        },
+        "DIAMOND": {
+            "TARGET": "",
+            "PURPOSE": "Mantener activo el conocimiento del quehacer educación superior, la experiencia aplicada, los relacionamientos conquistados, los sueños renovados y las aspiraciones de la humanización de la civilización."
+        }
+    }
 }

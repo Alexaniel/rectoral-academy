@@ -16,9 +16,35 @@
     "SELECT_MODALITY": "Select modality"
   },
   "DETAIL": {
-    "FORMAL_PROGRAM": "Forma program",
-    "INFORMAL_PROGRAM": "Informal program",
-    "DIPLOMATE": "Diplomate",
-    "DIRECTIVES": "Directives and leaderships"
-  }
+    "MODALITY": "",
+    "INVERSION": "",
+    "TYPE": "",
+    "TARGET_AUDIENCE": "",
+    "TARGET_AUDIENCE_HELP": "",
+    "ENROLLMENT_DATE": "",
+    "NOT_ENROLLMENT_DATE": "",
+    "COURSE_START_DATE": "",
+    "SYLLABUS": "",
+    "METHODOLOGY": "",
+    "PROFILE_OF_GRADUATION": "",
+    "FORMAL_PROGRAM": "",
+    "INFORMAL_PROGRAM": "",
+    "DIPLOMATE": "",
+    "MASTERCLASS": "",
+    "MASTER": "",
+    "PhD": "",
+    "DIRECTIVES": "",
+    "MENTORS": "",
+    "LANGUAGES": "",
+    "ABOUT": "",
+    "GBR": "",
+    "ESP": "",
+    "FRA": "",
+    "GNB": "",
+    "VIRTUAL": "",
+    "PRESENCIAL": "",
+    "MODULE": "",
+    "RELATED_CURSES": "",
+    "CONTACT": ""
+}
 }

@@ -1,18 +1,50 @@
 {
-  "CURSES": {
-    "HEADER": ""
-  },
-  "SEARCH_CURSES": {
-    "HEADER": "Buscar Cursos",
-    "SUBHEADER": "¡Desarrolla tus competencias de Formación Ejectutiva Universitaria!",
-    "PLACEHOLDER": "Buscar cursos",
-    "HELP": "",
-    "FILTER": "Filtrar cursos por",
-    "CATEGORY": "Categoría",
-    "SELECT_CATEGORY": "Seleccionar categoría",
-    "TYPE": "Tipo de curso",
-    "SELECT_TYPE": "Seleccionar tipo",
-    "MODALITY": "Modalidad",
-    "SELECT_MODALITY": "Seleccionar modalidad"
-  }
+    "CURSES": {
+        "HEADER": "Courses Library"
+    },
+    "SEARCH_CURSES": {
+        "HEADER": "Search curse",
+        "SUBHEADER": "¡Develop your University Executive Education competences!",
+        "PLACEHOLDER": "Search curse",
+        "HELP": "",
+        "FILTER": "Filter courses by",
+        "CATEGORY": "Category",
+        "SELECT_CATEGORY": "Select category",
+        "TYPE": "Type of curse",
+        "SELECT_TYPE": "Select type",
+        "MODALITY": "Modality",
+        "SELECT_MODALITY": "Select modality"
+    },
+    "DETAIL": {
+        "MODALITY": "",
+        "INVERSION": "",
+        "TYPE": "",
+        "TARGET_AUDIENCE": "",
+        "TARGET_AUDIENCE_HELP": "",
+        "ENROLLMENT_DATE": "",
+        "NOT_ENROLLMENT_DATE": "",
+        "COURSE_START_DATE": "",
+        "SYLLABUS": "",
+        "METHODOLOGY": "",
+        "PROFILE_OF_GRADUATION": "",
+        "FORMAL_PROGRAM": "",
+        "INFORMAL_PROGRAM": "",
+        "DIPLOMATE": "",
+        "MASTERCLASS": "",
+        "MASTER": "",
+        "PhD": "",
+        "DIRECTIVES": "",
+        "MENTORS": "",
+        "LANGUAGES": "",
+        "ABOUT": "",
+        "GBR": "",
+        "ESP": "",
+        "FRA": "",
+        "GNB": "",
+        "VIRTUAL": "",
+        "PRESENCIAL": "",
+        "MODULE": "",
+        "RELATED_CURSES": "",
+        "CONTACT": ""
+    }
 }

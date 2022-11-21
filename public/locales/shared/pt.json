@@ -1,17 +1,47 @@
 {
-  "LOADING": "",
-  "LANGUAGES": {
-    "SPANISH": "ES",
-    "ENGLISH": "EN",
-    "PORTUGUESE": "PT"
-  },
-  "MAIN_MENU": "",
-  "CHANGE_LANGUAGE": "",
-  "NAVBAR": {
-    "HOME": "",
-    "PURPOSE": "",
-    "SENSE_180": "",
-    "TRAINING_GAP": "",
-    "TARGET": ""
-  }
+    "LOADING": "Loading...",
+    "LANGUAGES": {
+        "SPANISH": "ES",
+        "ENGLISH": "EN",
+        "PORTUGUESE": "PT"
+    },
+    "MAIN_MENU": "",
+    "CHANGE_LANGUAGE": "",
+    "NAVBAR": {
+        "HOME": "",
+        "PURPOSE": "",
+        "SENSE_180": "",
+        "TRAINING_GAP": "",
+        "IDENTITY": "",
+        "TARGET": "",
+        "PORTFOLIO": "",
+        "PARTNERS": "",
+        "CONTACT": ""
+    },
+    "ACTIONS": {
+        "BACK": ""
+    },
+    "CONTACT": {
+        "PHONE": "",
+        "EMAIL": "",
+        "ADDRESS": "",
+        "CITY": "",
+        "COUNTRY": "",
+        "NO_AVAILABLE": ""
+    },
+    "MEMBERSHIP": {
+        "CATEGORY": "",
+        "GOLD": {
+            "TARGET": "",
+            "PURPOSE": ""
+        },
+        "PLATINUM": {
+            "TARGET": "",
+            "PURPOSE": ""
+        },
+        "DIAMOND": {
+            "TARGET": "",
+            "PURPOSE": ""
+        }
+    }
 }

@@ -1,12 +1,49 @@
 {
-  "PORTRAIT": {
-    "PROGRAM_ACADEMY": "",
-    "BOARD": "",
-    "IES": "",
-    "DESCRIPTION": "",
-    "SEE_CURSES": "",
-    "REQUEST_INFORMATION": "",
-    "FOR_THE_NEXT": "",
-    "SLOGAN": ""
-  }
+    "PORTRAIT": {
+        "PROGRAM_ACADEMY": "",
+        "BOARD": "",
+        "IES": "",
+        "DESCRIPTION": "",
+        "SEE_CURSES": "",
+        "REQUEST_INFORMATION": "",
+        "FOR_THE_NEXT": "",
+        "SLOGAN": ""
+    },
+    "SENSE": {
+        "SENSE_180": "",
+        "NEW_SENSE": "",
+        "CHANGE_DIRECTION": "",
+        "FULL_TURNAROUND": ""
+    },
+    "PURPOSE": {
+        "HEADER": "",
+        "MESSAGE": "",
+        "TAGS": {
+            "HUMANIZATION": "",
+            "EDUCATION": "",
+            "BOARD": "",
+            "HIGHER_EDUCATION": "",
+            "REMEMBER": "",
+            "RESCUE": "",
+            "RECONNECT": "",
+            "REINVENT": "",
+            "MEANS": "",
+            "ACkNOWLEDGES": ""
+        }
+    },
+    "TARGET": {
+        "AUDIENCE": "",
+        "GOLD": "",
+        "TARGET_GOLD": "",
+        "PURPOSE_GOLD": "",
+        "PLATINUM": "",
+        "TARGET_PLATINUM": "",
+        "PURPOSE_PLATINUM": "",
+        "DIAMOND": "",
+        "TARGET_DIAMOND": "",
+        "PURPOSE_DIAMOND": ""
+    },
+    "SPONSORS": {
+        "REGIONAL_PARTNERS": ""        
+    }
 }
