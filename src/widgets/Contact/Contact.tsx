@@ -36,28 +36,28 @@ const Contact = ({ data, email }: ContactProps) => {
             name: 'Facebook',
             keyName: 'FACEBOOK',
             link: data.socialMedia.FB,
-            icon: <AiFillFacebook />,
+            icon: <AiFillFacebook className={styles.socialIcon} />,
         },
         TW: {
             key: 'TW',
             name: 'Twitter',
             keyName: 'TWITTER',
             link: data.socialMedia.TW,
-            icon: <AiFillTwitterSquare />,
+            icon: <AiFillTwitterSquare className={styles.socialIcon} />,
         },
         LN: {
             key: 'LN',
             name: 'Linkedin',
             keyName: 'LINKEDIN',
             link: data.socialMedia.LN,
-            icon: <AiFillLinkedin />,
+            icon: <AiFillLinkedin className={styles.socialIcon} />,
         },
         IG: {
             key: 'IG',
             name: 'Instagram',
             keyName: 'INSTAGRAM',
             link: data.socialMedia.IG,
-            icon: <AiFillInstagram />,
+            icon: <AiFillInstagram className={styles.socialIcon} />,
         },
     };
 
@@ -73,46 +73,46 @@ const Contact = ({ data, email }: ContactProps) => {
 
     return (
         <div className={styles.contact}>
-            <Row gutter={[16, 16]}>
+            <Row gutter={[16, 16]} style={{ width: '100%' }}>
                 <Col xs={24} md={12}>
                     <Space
-                        className={styles.socialIcon}
+                        className={styles.containerIcon}
                         direction="horizontal"
                         size={8}
                         onClick={() => handleAction(`https://wa.me/${data.fullMobile}`)}
                     >
-                        <AiFillPhone style={{ verticalAlign: 'middle', marginTop: 4 }} />
-                        <Text variant="large" styles={valueProps}>
+                        <AiFillPhone className={styles.socialIcon} />
+                        <span className={styles.text}>
                             {`${data.countryCode} ${data.mobile}`}
-                        </Text>
+                        </span>
                     </Space>
-                </Col>
-                <Col xs={24} md={12}>
                     <Space
-                        className={styles.socialIcon}
+                        className={styles.containerIcon}
                         direction="horizontal"
                         size={8}
                         onClick={() => handleAction(email)}
                     >
-                        <AiTwotoneMail style={{ verticalAlign: 'middle', marginTop: 4 }} />
-                        <Text variant="large" styles={valueProps}>
+                        <AiTwotoneMail className={styles.socialIcon} />
+                        <span className={styles.text}>
                             {email}
-                        </Text>
+                        </span>
                     </Space>
                 </Col>
+                <Col xs={24} md={12}>
+                    <div className={styles.socialMedia}>
+                        {
+                            SOCIAL_MEDIA_LIST.map((item) => (
+                                <div
+                                    className={styles.icon}
+                                    onClick={() => handleAction(item.link)}
+                                >
+                                    {item.icon}
+                                </div>
+                            ))
+                        }
+                    </div>
+                </Col>
             </Row>
-            <div className={styles.socialMedia}>
-                {
-                    SOCIAL_MEDIA_LIST.map((item) => (
-                        <div
-                            className={styles.socialIcon}
-                            onClick={() => handleAction(item.link)}
-                        >
-                            {item.icon}
-                        </div>
-                    ))
-                }
-            </div>
         </div>
     );
 };

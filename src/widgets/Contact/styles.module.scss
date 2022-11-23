@@ -2,7 +2,8 @@
 @import '../../styles/utils';
 
 .contact {
-    margin: 24px 0 16px 0;
+    margin: 16px 0;
+    margin-top: 20px;
     background-color: $neutralLighter;
     border-radius: 8px;
     
@@ -10,49 +11,62 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px 16px;
+    padding: 16px;
     
     @include breakpoint (md) {
         flex-direction: row;
         align-items: center;
-        padding: 0 16px;
+    }
+}
+
+.containerIcon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 8px;
+
+    &:last-child { margin-bottom: 0; }
+
+    .text {
+        font-size: 16px;
+        font-weight: 500;
+        color: $themePrimary;
+        display: flex;
+        text-align: left;
     }
 }
 
 
 .socialMedia {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
-    margin: 0;
-    margin-top: 16px;
+    height: 100%;
 
-    @include breakpoint(md) { margin: 0; }
+    .icon {
+        margin: 0 8px;
+        cursor: pointer;
+        &:first-child { margin-left: 0; }
+        &:last-child { margin-right: 0; }
+    
+        &:active { transform: scale(0.85); }
+    }
 
+    @include breakpoint (md) {
+        justify-content: flex-end;
+    }
 }
 
 .socialIcon {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin: 0 16px;
-    width: 100%;
     cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
 
-    &:first-child { margin-left: 0; }
-    &:last-child { margin-right: 0; }
+    fill: $themePrimary;
+    height: 28px;
+    width: 28px;
 
-    &:active { transform: scale(0.85); }
-
-    svg {
-        fill: $themePrimary;
-        height: 28px;
-        width: 28px;
-    }
-
-    span { margin: 0; }
-
-    @include breakpoint(md) {
-        margin: 16px 8px;
-    }
 }

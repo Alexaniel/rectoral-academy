@@ -26,24 +26,26 @@ interface ILanguage {
 const Teacher = ({ teacher, index }: TeacherProps) => {
     const { t } = useTranslation('curses', { keyPrefix: 'DETAIL' });
 
+    const { academic, contact } = teacher;
+
     const imageProps: Partial<IImageProps> = {
         src: teacher.image.original,
-        alt: teacher?.names,
+        alt: teacher?.name,
         loading: 'lazy',
         width: 45,
         height: 45,
     };
 
     const personaWithInitials: IPersonaSharedProps = {
-        secondaryText: teacher?.jobPosition,
-        text: teacher?.names,
-        imageInitials: teacher?.names?.charAt(0),
+        secondaryText: academic?.jobPosition,
+        text: teacher?.name,
+        imageInitials: teacher?.name?.charAt(0),
     };
 
     const [languages, setLanguages] = useState<ILanguage[]>([]);
 
     const fetchLanguages = async () => {
-        const response = getLanguages(teacher?.languages);
+        const response = getLanguages(academic?.languages);
         setLanguages(response);
     };
 
@@ -72,7 +74,7 @@ const Teacher = ({ teacher, index }: TeacherProps) => {
             />
 
             <Text variant="large" block styles={descriptionProps}>
-                {teacher?.synthesis}
+                {academic?.biography}
             </Text>
 
             <div className={styles.languages}>
