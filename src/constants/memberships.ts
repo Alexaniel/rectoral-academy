@@ -1,10 +1,11 @@
+import { TYPES_MEMBERSHIPS } from '../enums/Memberships';
 import { IMembership } from '../interfaces';
 import IMAGES from './images';
 
 export const NAMES = {
-    GOLD: 'GOLD',
-    PLATINUM: 'PLATINUM',
-    DIAMOND: 'DIAMOND',
+    GOLD: TYPES_MEMBERSHIPS.GOLD,
+    PLATINUM: TYPES_MEMBERSHIPS.PLATINUM,
+    DIAMOND: TYPES_MEMBERSHIPS.DIAMOND,
 };
 
 export const MEMBERSHIPS: IMembership[] = [

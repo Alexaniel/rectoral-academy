@@ -9,3 +9,9 @@ export enum SUB_TYPES_PROGRAM {
     MASTER = 'MASTER',
     PhD = 'PhD'
 }
+
+export enum TYPES_MODALITY {
+    PRESENCIAL = 'PRESENCIAL',
+    SEMI_PRESENCIAL = 'SEMI_PRESENCIAL',
+    VIRTUAL = 'VIRTUAL',
+}

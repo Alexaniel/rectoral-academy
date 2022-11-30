@@ -25,6 +25,7 @@
         "TARGET_AUDIENCE": "Público objetivo / requisitos",
         "TARGET_AUDIENCE_HELP": "Texto del ícono de ayuda para público objetivo",
         "ENROLLMENT_DATE": "Período de matrícula",
+        "ENROLL": "Aplicar al curso",
         "NOT_ENROLLMENT_DATE": "Aún no se ha abierto el período de matrículas",
         "COURSE_START_DATE": "Fecha de inicio del curso",
         "SYLLABUS": "Plan de estudios",

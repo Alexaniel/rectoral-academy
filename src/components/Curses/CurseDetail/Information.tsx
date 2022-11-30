@@ -1,9 +1,14 @@
 import moment from 'moment';
+import { Button } from 'antd';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Text } from '@fluentui/react/lib/Text';
 import { FontIcon } from '@fluentui/react/lib/Icon';
 import { mergeStyles } from '@fluentui/react/lib/Styling';
 import { labelProps, valueProps } from '../elementsProperties';
+
+import ModalWrapper from '../../Modals';
+import FormPreEnroll from '../../Modals/PreEnroll';
 
 import styles from '../styles.module.scss';
 
@@ -24,6 +29,8 @@ const Information = ({
 }: IInformationProps) => {
     const { t } = useTranslation('curses', { keyPrefix: 'DETAIL' });
 
+    const [visible, setVisible] = useState<boolean>(false);
+
     const iconClass = mergeStyles({
         fontSize: 20,
         height: 20,
@@ -33,6 +40,12 @@ const Information = ({
 
     return (
         <div className={styles.information}>
+            <ModalWrapper
+                visible={visible}
+                onCancel={() => setVisible(false)}
+            >
+                <FormPreEnroll />
+            </ModalWrapper>
             <Text
                 variant="large"
                 block
@@ -75,42 +88,6 @@ const Information = ({
                 block
                 styles={labelProps}
             >
-                {t('ENROLLMENT_DATE')}
-            </Text>
-
-            {
-                enrollmentData?.isNext
-                    ? (
-                        <Text
-                            variant="large"
-                            styles={valueProps}
-                        >
-                            {t('NOT_ENROLLMENT_DATE')}
-                        </Text>
-                    )
-                    : (
-                        <Text
-                            variant="large"
-                            styles={valueProps}
-                        >
-                            <FontIcon
-                                aria-label="InsertSignatureLine"
-                                iconName="InsertSignatureLine"
-                                className={iconClass}
-                            />
-                            {
-                                `${moment(enrollmentData?.startDate).format('ll')} - 
-                                ${moment(enrollmentData?.endDate).format('ll')}`
-                            }
-                        </Text>
-                    )
-            }
-
-            <Text
-                variant="large"
-                block
-                styles={labelProps}
-            >
                 {t('COURSE_START_DATE')}
             </Text>
 
@@ -126,6 +103,50 @@ const Information = ({
                 { `${moment(enrollmentData?.startDate).format('ll')}`}
             </Text>
 
+            <Text
+                variant="large"
+                block
+                styles={labelProps}
+            >
+                {t('ENROLLMENT_DATE')}
+            </Text>
+
+            {
+                !enrollmentData?.isNext
+                    ? (
+                        <Text
+                            variant="large"
+                            styles={valueProps}
+                        >
+                            {t('NOT_ENROLLMENT_DATE')}
+                        </Text>
+                    )
+                    : (
+                        <>
+                            <Text
+                                variant="large"
+                                styles={valueProps}
+                            >
+                                <FontIcon
+                                    aria-label="InsertSignatureLine"
+                                    iconName="InsertSignatureLine"
+                                    className={iconClass}
+                                />
+                                {
+                                    `${moment(enrollmentData?.startDate).format('ll')} - 
+                                    ${moment(enrollmentData?.endDate).format('ll')}`
+                                }
+                            </Text>
+                            <Button
+                                onClick={() => setVisible(true)}
+                                type="primary"
+                                block
+                            >
+                                {t('ENROLL')}
+                            </Button>
+                        </>
+                    )
+            }
         </div>
     );
 };

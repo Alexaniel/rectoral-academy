@@ -1,0 +1,7 @@
+import { TYPES_MODALITY } from '../enums/Curse';
+
+export const MODALITIES: string[] = [
+    TYPES_MODALITY.PRESENCIAL,
+    TYPES_MODALITY.SEMI_PRESENCIAL,
+    TYPES_MODALITY.VIRTUAL,
+];

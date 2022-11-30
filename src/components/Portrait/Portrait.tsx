@@ -5,11 +5,14 @@ import {
 import { Image, IImageProps } from '@fluentui/react/lib/Image';
 import { Text, ITextStyles } from '@fluentui/react/lib/Text';
 
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { theme } from '../../theme';
 import IMAGES from '../../constants/images';
 import styles from './styles.module.scss';
+import ModalWrapper from '../Modals';
+import FormContact from '../Modals/Contact';
 
 const portraitStackProps: Partial<IStackProps> = {
     horizontal: true,
@@ -65,8 +68,17 @@ const buttonStyles: Partial<IButtonStyles> = {
 const Portrait = () => {
     const { t } = useTranslation('home', { keyPrefix: 'PORTRAIT' });
     const navigate = useNavigate();
+
+    const [visible, setVisible] = useState<boolean>(false);
+
     return (
         <Stack {...portraitStackProps}>
+            <ModalWrapper
+                visible={visible}
+                onCancel={() => setVisible(false)}
+            >
+                <FormContact />
+            </ModalWrapper>
             <Stack {...stackProps}>
                 <Stack.Item grow={2}>
                     <div style={lineProps} />
@@ -123,7 +135,7 @@ const Portrait = () => {
                         <DefaultButton
                             styles={buttonStyles}
                             className={styles.button}
-                            /* TO DO - Action to info modal */
+                            onClick={() => setVisible(true)}
                         >
                             <Text variant="large" style={{ fontWeight: 600 }}>
                                 {t('REQUEST_INFORMATION')}

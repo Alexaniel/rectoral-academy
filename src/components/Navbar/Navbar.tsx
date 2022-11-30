@@ -1,7 +1,7 @@
 import cs from 'classnames';
 
 import { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { BiMenu } from 'react-icons/bi';
@@ -40,7 +40,8 @@ const Navbar = () => {
     const { t } = useTranslation('shared', { keyPrefix: 'NAVBAR' });
     const [optionActive, setOptionActive] = useState<string | undefined>('');
     const [isPanelOpen, { setTrue: showPanel, setFalse: dismissPanel }] = useBoolean(false);
-    const { pathname, hash } = useLocation();
+    const { pathname } = useLocation();
+    const navigate = useNavigate();
 
     const MAIN_PAGE: string = 'identity';
 
@@ -55,11 +56,6 @@ const Navbar = () => {
             url: '/curses',
             name: t('PORTFOLIO'),
         },
-        {
-            key: 'contact',
-            url: '/contact',
-            name: t('CONTACT'),
-        },
     ];
 
     useEffect(() => {
@@ -69,7 +65,7 @@ const Navbar = () => {
 
     return (
         <div className={styles.navbar}>
-            <Image {...imageProps} />
+            <Image {...imageProps} onClick={() => navigate('/')} />
 
             <BiMenu
                 className={styles.iconMenu}

@@ -1,0 +1,116 @@
+.ant-form-item {
+    margin-bottom: 24px;
+
+    &-label > label {
+        color: $themePrimary;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+        height: auto;
+        &::before{ display: none !important; }
+    }
+
+    input, textArea {
+        padding: 6px 12px;
+        border: 1.5px solid $neutralLight;
+        border-radius: 4px;
+        font-size: 15px;
+        background-color: $neutralLighterAlt;
+        font-weight: 300;
+        min-height: 41px;
+
+        &:focus {
+            border-color: transparent;
+            box-shadow: 0 0 0 3px rgb(27 68 132 / 20%)
+        }
+
+        &::placeholder {
+            color: $neutralTertiaryAlt;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+
+    /* Input Select */
+    .ant-select {
+        
+        &-selector {
+            background-color: $neutralLighterAlt !important;
+            padding: 4px 12px !important;
+            border: 1.5px solid $neutralLight !important;
+            height: auto !important;
+        }
+
+        &-selection {
+            &-search {
+                min-height: 41px;
+            }
+            &-search-input {
+                height: 100% !important;
+                box-shadow: none !important;
+                border: none !important;
+            }
+
+            &-placeholder {
+                color: $neutralTertiaryAlt;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            &-item {
+                font-size: 15px;
+                font-weight: 300;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+        }
+
+        .category {
+            img { object-fit: contain; }
+        }
+        
+    }
+
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+        background-color: $neutralQuaternaryAlt !important;
+    }
+
+    /* Range Picker Date */
+    .ant-picker-range {
+        width: 100%;
+        border: none;
+        padding-left: 0;
+        box-shadow: none;
+    }
+
+    .ant-picker-range .ant-picker-active-bar {
+        margin-left: 0;
+        bottom: -3px;
+    }
+
+    /* Input number */
+    .ant-input-number {
+        border: none;
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+
+/* Phone Number */
+.phoneNumber {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+
+    .countryCode {
+        width: 124px;
+        min-width: 124px;
+        margin-right: 12px;
+    }
+
+    .mobile {
+        width: 100%;
+    }
+}

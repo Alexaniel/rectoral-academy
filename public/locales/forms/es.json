@@ -1,0 +1,117 @@
+{
+    "FORMS": {
+        "PARTNERS": "Quiero ser un Partner",
+        "PARTNERS_DESCRIPTION": "Postulate como partner de Rectoral Board Academy, envía tu información y nuestro gabinete la revisará y te contactará.",
+        "INSTITUTION": "Información de la institución",
+        "REPRESENTATIVE": "Información del representante",
+        "PROGRAM": "Información del programa",
+        "CONTACT": "Contacto",
+        "CONTACT_DESCRIPTION": "Envía cualquier consulta que tengas, nuestro gabinete se pondrá en contacto contigo a la brevedad.",
+        "ENROLL": "Quiero inscribirme",
+        "ENROLL_DESCRIPTION": "Envía tu información y nuestro gabinete se pondrá en contacto contigo a la brevedad.",
+        "PERSONAL": "Información personal",
+        "ACADEMIC": "Información académica",
+        "MOTIVATION": "Motivación",
+        "INPUTS": {
+            "NAME": "Nombres",
+            "NAME_PLACEHOLDER": "Ej. Juan",
+            "LAST_NAME": "Apellidos",
+            "LAST_NAME_PLACEHOLDER": "Ej. Martīnez",
+            "EMAIL": "Correo electrónico",
+            "EMAIL_PLACEHOLDER": "Ej. email@domain.com",
+            "COUNTRY_CODE": "Código",
+            "COUNTRY_CODE_PLACEHOLDER": "+593",
+            "PHONE_NUMBER": "Número de teléfono",
+            "MOBILE": "Número de teléfono",
+            "MOBILE_PLACEHOLDER": "Ej. 123456789",
+            "COUNTRY": "País",
+            "COUNTRY_PLACEHOLDER": "Ecuador",
+            "MEMBERSHIP": "Tipo de membresía",
+            "MEMBERSHIP_PLACEHOLDER": "Ej. Gold",
+            "CATEGORY": "Categoría",
+            "INSTITUTE": "Institución",
+            "INSTITUTE_PLACEHOLDER": "Ej. Universidad de Guayaquil",
+            "INSTITUTE_TYPE": "Tipo de institución",
+            "INSTITUTE_TYPES": {
+                "IES_PUBLIC": "Institución pública",
+                "IES_PRIVATE": "Institución privada",
+                "IES_COMMUNITY": "Institución comunitaria",
+                "IES_TECH": "Institución tecnológica",
+                "EDUCATIONAL_NETWORK": "Red educacional",
+                "GOVERNMENT_INSTITUTION": "Institución gubernamental",
+                "CONSULTING_ASSISTANCE": "Consultoría y/o asistencia",
+                "TECHNOLOGY_PROVIDER": "Proveedor tecnológico"
+            },
+            "INSTITUTION": {
+                "NAME": "Nombre de la institución",
+                "NAME_PLACEHOLDER": "Nombre de la institución",
+                "COUNTRY": "País de la institución",
+                "WEBSITE": "Sitio web de la institución",
+                "WEBSITE_PLACEHOLDER": "Ej. www.example.com",
+                "EMAIL": "Correo electrónico de la institución",
+                "EMAIL_PLACEHOLDER": "Ej. email@domain.com"
+            },
+            "REPRESENTATIVE": {
+                "NAMES": "Nombres del respresentante",
+                "NAMES_PLACEHOLDER": "Ej. Juan Martīnez",
+                "COUNTRY_CODE": "Código de país",
+                "MOBILE": "Número de teléfono",
+                "MOBILE_PLACEHOLDER": "Ej. 123456789",
+                "EMAIL": "Correo electrónico"
+            },
+            "PROGRAM": {
+                "NAME": "Nombre del programa",
+                "NAME_PLACEHOLDER": "Ej. Programa de formación en tecnologías de la información",
+                "DESCRIPTION": "Descripción del programa (opcional)",
+                "DESCRIPTION_PLACEHOLDER": "Ej. El programa de formación en tecnologías de la información tiene como objetivo...",
+                "MODALITY": "Modalidad del programa",
+                "MODALITY_PLACEHOLDER": "Ej. Presencial",
+                "VIRTUAL": "Virtual",
+                "PRESENCIAL": "Presencial",
+                "SEMI_PRESENCIAL": "Semi-presencial",
+                "TARGET": "Público objetivo",
+                "TARGET_PLACEHOLDER": "Ej. Estudiantes de ingeniería de sistemas",
+                "DURATION": "Duración del programa",
+                "HOURS": "Carga horaria",
+                "HOURS_PLACEHOLDER": "Ej. 120 horas"
+            },
+            "CONTACT": {
+                "TOPIC": "Asunto",
+                "TOPIC_PLACEHOLDER": "Ej. Consulta sobre el programa de formación en tecnologías de la información",
+                "MESSAGE": "Mensaje",
+                "MESSAGE_PLACEHOLDER": "Ej. Hola, quisiera saber más sobre el programa de formación en tecnologías de la información..."
+            },
+            "ENROLL": {
+                "IS_MEMBER": "¿Eres miembro de Rectoral Board?",
+                "YES": "Sí, claro que si",
+                "NO": "Aún no",
+                "MOTIVATION": "¿Cuál es tu motivación para aplicar el curso? (opcional)",
+                "MOTIVATION_PLACEHOLDER": "Ej. Quiero aprender más sobre el tema...",
+                "JOB_POSITION": "¿Cuál es tu cargo actual?",
+                "JOB_POSITION_PLACEHOLDER": "Ej. Director de tecnologías de la información",
+                "DESIGNATION": "¿Cuál es tu titulación academica actual?",
+                "DESIGNATION_PLACEHOLDER": "Ej. Director de tecnologías de la información",
+                "DESIGNATION_DURATION": "¿Cuánto tiempo llevas en el cargo?"
+            }
+        },
+        "RESPONSES": {
+            "SUCCESS": "¡Mensaje enviado!",
+            "SUCCESS_DESCRIPTION": "Gracias por contactarnos, nos pondremos en contacto contigo a la brevedad.",
+            "ERROR": "¡Lo sentimos!"
+        },
+        "LOADINGS": {
+    
+        },
+        "ACTIONS": {
+            "SEND": "Enviar",
+            "CANCEL": "Cancelar"
+        },
+        "RULES": {
+            "REQUIRED_FIELD": "Este campo es requerido",
+            "INVALID_URL": "URL inválida",
+            "INVALID_EMAIL": "El email no es válido",
+            "MIN_LENGTH": "Este campo debe tener al menos {0} caracteres",
+            "MAX_LENGTH": "Este campo debe tener como máximo {0} caracteres"
+        }
+    }
+}

@@ -9,7 +9,7 @@ import { getCurseById } from '../../../api/curses';
 import { ICurse } from '../../../interfaces';
 import { BackButton } from '../../../widgets/BackButton';
 import { Subheader } from '../../../widgets/Subheader';
-import { categoryProps, descriptionProps, labelProps } from '../elementsProperties';
+import { descriptionProps, labelProps } from '../elementsProperties';
 
 import Description from './Description';
 import Information from './Information';
@@ -111,13 +111,6 @@ const CurseDetail = () => {
                         {t('RELATED_CURSES')}
                     </Text>
 
-                    <Text
-                        styles={labelProps}
-                        variant="xxLarge"
-                        block
-                    >
-                        {t('APPLY_TO_CURSE')}
-                    </Text>
                 </div>
             )
     );
